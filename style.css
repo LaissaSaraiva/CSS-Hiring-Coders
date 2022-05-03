@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color:rgb(160, 71, 123); */
+}
+
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background:linear-gradient(90deg,#BA5370,#F4E2D8);
+    text-align: center;
+}
+
+#menu__nav{
+    text-align: right;
+    paddins
+   
+}
+
+#menu__nav li {
+    display: inline-block;
+}
