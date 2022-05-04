@@ -2,10 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* color:rgb(160, 71, 123); */
+    font-family: 'Poppins', sans-serif;
+    color:rgb(83, 0, 63);
 }
 
+
+header {
+
+    width: 80%;
+    margin: 0 auto;
+}
 
 ul{
     list-style: none;
@@ -22,10 +28,42 @@ body {
 
 #menu__nav{
     text-align: right;
-    paddins
-   
 }
 
 #menu__nav li {
     display: inline-block;
+    margin: 0 10px;
+}
+
+#container {
+    height: 70vh;
+    margin: 50px 0;
+}
+
+#container .name h1 {
+    font-size: 45px;
+}
+
+#container .name h5 {
+    font-size: 25px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+#form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#form input {
+    width: 50%;    
+}
+
+#form button {
+    width: 15%;
 }
