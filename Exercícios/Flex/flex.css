@@ -1,0 +1,30 @@
+
+.container__flex {
+    display: flex;
+    text-align: center;
+
+}
+
+
+.container__flex .itens {
+border: 1px solid #000000;
+margin: 0 15px;
+flex-basis: 100%;
+
+}
+
+.container__flex .imagens {
+    width: 250px;
+    padding-top: 25px;
+
+
+}
+
+.container__flex .imagens .wong {
+    width: 180px;
+
+}
+/* 
+.container__flex p {
+    width: 100px;
+} */
