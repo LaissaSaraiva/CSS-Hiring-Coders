@@ -22,7 +22,7 @@ a {
 }
 
 body {
-    background:linear-gradient(90deg,#BA5370,#F4E2D8);
+    background:linear-gradient(90deg,rgb(187, 84, 113),rgb(244, 225, 215));
     text-align: center;
 }
 
@@ -33,6 +33,16 @@ body {
 #menu__nav li {
     display: inline-block;
     margin: 0 10px;
+   
+}
+
+#menu__nav ul li a{
+    transition: 300ms;
+}
+
+#menu__nav ul li a:hover {
+    text-decoration: underline;
+    text-shadow: 0px 1px 0px rgb(212, 174, 185);
 }
 
 #container {
@@ -57,13 +67,37 @@ body {
 
 #form {
     width: 40%;
-    margin: 0 auto;
+    margin: 20px auto;
+    
 }
 
 #form input {
-    width: 50%;    
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;;
+    
 }
 
 #form button {
     width: 15%;
+    cursor:pointer;
+    border:none;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(to right,rgb(187, 84, 113) 50%,rgb(244, 225, 215) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: all 500ms ease-out;
+    
+    margin-left: -5px;
+}
+
+#form button:hover{
+    background-position: left bottom;
+    background-color: rgba(250, 235, 215,0.5);
+    color:antiquewhite;
+    box-shadow: 1px 1px 1px 1px rgb(83, 0, 63);
+
 }
