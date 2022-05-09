@@ -1,3 +1,5 @@
+/* Configurações Iniciais */
+
 *{
     padding: 0;
     margin: 0;
@@ -6,11 +8,17 @@
     color:rgb(83, 0, 63);
 }
 
+body {
+    background:linear-gradient(90deg,rgb(187, 84, 113),rgb(244, 225, 215));
+    text-align: center;
+}
+
+/* Cabeçalho*/
 
 header {
-
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 45px;
 }
 
 ul{
@@ -21,11 +29,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    background:linear-gradient(90deg,rgb(187, 84, 113),rgb(244, 225, 215));
-    text-align: center;
-}
-
 #menu__nav{
     text-align: right;
 }
@@ -33,7 +36,6 @@ body {
 #menu__nav li {
     display: inline-block;
     margin: 0 10px;
-   
 }
 
 #menu__nav ul li a{
@@ -45,9 +47,10 @@ body {
     text-shadow: 0px 1px 0px rgb(212, 174, 185);
 }
 
+/* Estilização do Conteúdo da Página */
 #container {
-    height: 70vh;
-    margin: 50px 0;
+    height: 50vh;
+    margin: 50px auto 0;
 }
 
 #container .name h1 {
@@ -58,17 +61,43 @@ body {
     font-size: 25px;
 }
 
-#about p {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: justify;
+/* Animação da seta */
+#arrow {
+    font-size: 25px;
+    cursor: pointer;  
+}
+
+@keyframes blink{
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
 }
 
 
+#about p {
+    max-width: 600px;
+    margin: 15px auto;
+    text-align: justify;
+
+}
+
 #form {
     width: 40%;
-    margin: 20px auto;
-    
+    margin: 30px auto;   
 }
 
 #form input {
@@ -76,11 +105,10 @@ body {
     padding: 5px 10px;
     border: none;
     border-radius: 5px 0 0 5px;;
-    
 }
 
 #form button {
-    width: 15%;
+    width: 20%;
     cursor:pointer;
     border:none;
     border-radius: 0 5px 5px 0;
@@ -99,5 +127,28 @@ body {
     background-color: rgba(250, 235, 215,0.5);
     color:antiquewhite;
     box-shadow: 1px 1px 1px 1px rgb(83, 0, 63);
+
+}
+
+/* Responsividade */
+
+@media only screen and (max-width:768px){
+    #form {
+        width: 80%;
+    }
+    
+    #about p {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    #container .name h1 {
+        font-size: 30px;
+    }
+    
+    #container .name h5 {
+        font-size: 17px;
+    }
 
 }

@@ -25,7 +25,7 @@
                     <a target="_blank" href="https://www.linkedin.com/in/laissasc/">LinkedIn</a>
                 </li>
                 <li>
-                    <a  target="_blank" href="mailto:teste@teste.com">Email</a>
+                    <a  target="_blank" href="#">Email</a>
                 </li>
             </ul>
         </div>  
@@ -38,23 +38,32 @@
                 <h5>Front-end Developer</h5>
             </div>
 
-            <div id="arrow">
-                <i class="fa-solid fa-circle-arrow-down"></i>
+            <div onclick="displayAbout()"  id="arrow">
+              <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
             </div>
 
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aperiam harum corporis recusandae sint blanditiis? Debitis accusamus recusandae maiores impedit ipsum, quae eveniet officiis ipsa quas similique aspernatur corporis nihil.</p>
             </div>
 
             <div id="form">
                 <form>
-                    <input type="text" placeholder="Seu melhor email :)">
-                    <button>Enviar</button>
+                
+                    <input type="email" placeholder="Seu melhor email :)">
+                    <button onclick="alert('Obrigada por visitar meu projeto!')">Enviar</button>
                 </form>
             </div>
             
         </section>    
     </main>
-   
+    <script>
+
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>   
 </body>
 </html>
